@@ -13,16 +13,16 @@ function usePrevious(value) {
 }
 
 const FILTER_MAP = {
-  All: () => true,
-  Active: (task) => !task.completed,
-  Completed: (task) => task.completed
+  全Task: () => true,
+  残り: (task) => !task.completed,
+  完了: (task) => task.completed
 };
 
 const FILTER_NAMES = Object.keys(FILTER_MAP);
 
 function App(props) {
   const [tasks, setTasks] = useState(props.tasks);
-  const [filter, setFilter] = useState('All');
+  const [filter, setFilter] = useState('全Task');
 
   function addTask(name) {
     const newTask = { id: `todo-${nanoid()}`, name, completed: false };
@@ -78,7 +78,7 @@ function App(props) {
   ));
 
   const tasksNoun = taskList.length !== 1 ? 'tasks' : 'task';
-  const headingText = `${taskList.length} ${tasksNoun} remaining`;
+  const headingText = `${taskList.length} ${tasksNoun}`;
   const listHeadingRef = useRef(null);
   const prevTaskLength = usePrevious(tasks.length);
 
@@ -90,7 +90,7 @@ function App(props) {
 
   return (
     <div className="todoapp stack-large">
-      <h1>TodoMatic</h1>
+      <h1>TodoCtrl</h1>
       <Form addTask={addTask} />
       <div className="filters btn-group stack-exception">
         {filterList}
@@ -99,7 +99,6 @@ function App(props) {
         {headingText}
       </h2>
       <ul
-        // role="list"
         className="todo-list stack-large stack-exception"
         aria-labelledby="list-heading"
       >
