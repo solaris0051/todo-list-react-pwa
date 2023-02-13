@@ -1,6 +1,6 @@
 {
-  "short_name": "todo-react",
-  "name": "todo-ctrl-comsuming-react",
+  "short_name": "todo-list",
+  "name": "todo-list-consuming-cra",
   "icons": [
     {
       "src": "favicon.ico",
