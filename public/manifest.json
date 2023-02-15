@@ -1,6 +1,6 @@
 {
-  "short_name": "todo-list",
-  "name": "todo-list-consuming-cra",
+  "short_name": "todo-list-pwa",
+  "name": "todo-list-pwa-consuming-cra",
   "icons": [
     {
       "src": "favicon.ico",
