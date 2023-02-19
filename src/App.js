@@ -104,6 +104,9 @@ function App(props) {
       >
         {taskList}
       </ul>
+      <footer>
+        This product is dedicated to Ms. Watt. Since Jan, 2023. ©Y.K.
+      </footer>
     </div>
   );
 }

@@ -19,6 +19,14 @@ h2 {
   margin-bottom: 0;
 }
 
+footer{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  color: green;
+  font-size:medium;
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -36,7 +44,6 @@ button {
   line-height: normal;
   -webkit-font-smoothing: inherit;
   -moz-osx-font-smoothing: inherit;
-  -webkit-appearance: none;
 }
 
 button::-moz-focus-inner {
