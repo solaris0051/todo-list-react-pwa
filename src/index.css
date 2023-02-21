@@ -19,12 +19,11 @@ h2 {
   margin-bottom: 0;
 }
 
-footer{
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  color: green;
-  font-size:medium;
+footer {
+  box-sizing: content-box;
+  text-align: center;
+  color: #009A44;
+  font-size: large;
 }
 
 ul {
