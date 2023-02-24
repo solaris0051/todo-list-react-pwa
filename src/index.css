@@ -22,7 +22,7 @@ h2 {
 footer {
   box-sizing: content-box;
   text-align: center;
-  color: #009A44;
+  color: inherit;
   font-size: large;
 }
 
@@ -74,8 +74,8 @@ body {
   max-width: 68rem;
   margin: 0 auto;
   font: 1.6rem/1.25 Arial, sans-serif;
-  background-color: #f5f5f5;
-  color: #4d4d4d;
+  background-color: #F2F2F2;
+  color: #F2F2F2;
 }
 
 @media screen and (min-width: 620px) {
@@ -94,7 +94,7 @@ body {
 
 .btn {
   padding: 0.8rem 1rem 0.7rem;
-  border: 0.2rem solid #4d4d4d;
+  border: 0.2rem solid #87cefa;
   cursor: pointer;
   text-transform: capitalize;
 }
@@ -106,7 +106,7 @@ body {
 
 .btn.toggle-btn[aria-pressed="true"] {
   text-decoration: underline;
-  border-color: #4d4d4d;
+  border-color: #87cefa;
 }
 
 .btn__danger {
@@ -182,7 +182,7 @@ body {
 
 /* END GLOBAL STYLES */
 .todoapp {
-  background: #fff;
+  background: green;
   margin: 2rem 0 4rem;
   padding: 1rem;
   position: relative;
@@ -227,7 +227,7 @@ body {
 }
 
 .input__lg:focus {
-  border-color: #4d4d4d;
+  border-color: #87cefa;
   box-shadow: inset 0 0 0 2px;
 }
 
