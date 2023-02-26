@@ -13,7 +13,7 @@ function usePrevious(value) {
 }
 
 const FILTER_MAP = {
-  全Task: () => true,
+  全部: () => true,
   残り: (task) => !task.completed,
   完了: (task) => task.completed
 };
@@ -22,7 +22,7 @@ const FILTER_NAMES = Object.keys(FILTER_MAP);
 
 function App(props) {
   const [tasks, setTasks] = useState(props.tasks);
-  const [filter, setFilter] = useState('全Task');
+  const [filter, setFilter] = useState('全部');
 
   function addTask(name) {
     const newTask = { id: `todo-${nanoid()}`, name, completed: false };
