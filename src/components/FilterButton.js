@@ -9,7 +9,6 @@ function FilterButton(props) {
         onClick={() => props.setFilter(props.name)}
       >
         <span>{props.name}</span>
-        <span className="visually-hidden">を表示します</span>
       </button>
     );
   }

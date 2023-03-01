@@ -44,11 +44,9 @@ export default function Todo(props) {
                     className="btn todo-cancel"
                     onClick={() => setEditing(false)}
                 >
-                    <span className="visually-hidden">{props.name}の名前変更を</span>
                     取消
                 </button>
                 <button type="submit" className="btn btn__primary todo-edit">
-                    <span className="visually-hidden">{props.name}の新しい名前を</span>
                     保存
                 </button>
             </div>
@@ -73,14 +71,14 @@ export default function Todo(props) {
                     className="btn"
                     onClick={() => setEditing(true)}
                     ref={editButtonRef}>
-                    <span className="visually-hidden">{props.name}を</span>編集
+                    編集
                 </button>
                 <button
                     type="button"
                     className="btn btn__danger"
                     onClick={() => props.deleteTask(props.id)}
                 >
-                    <span className="visually-hidden">{props.name}を</span>削除
+                    削除
                 </button>
             </div>
         </div>
