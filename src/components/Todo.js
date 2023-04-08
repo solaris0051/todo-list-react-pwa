@@ -7,7 +7,7 @@ function usePrevious(value) {
     return ref.current;
 }
 export default function Todo(props) {
-    const [newName, setNewName] = useState('');
+    const [newName, setNewName] = useState("");
     function handleChange(e) {
         setNewName(e.target.value);
     }

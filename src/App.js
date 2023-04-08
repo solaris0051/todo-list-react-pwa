@@ -13,9 +13,9 @@ function usePrevious(value) {
 }
 
 const FILTER_MAP = {
-  全部: () => true,
-  残り: (task) => !task.completed,
-  完了: (task) => task.completed
+  タスク全: () => true,
+  タスク残: (task) => !task.completed,
+  タスク完: (task) => task.completed
 };
 
 const FILTER_NAMES = Object.keys(FILTER_MAP);
@@ -30,7 +30,7 @@ function App() {
     }
   });
   
-  const [filter, setFilter] = useState('全部');
+  const [filter, setFilter] = useState("タスク全");
 
   useEffect(() => {
     localStorage.setItem("tasks", JSON.stringify(tasks));
@@ -89,8 +89,7 @@ function App() {
     />
   ));
 
-  const tasksNoun = taskList.length !== 1 ? 'tasks' : 'task';
-  const headingText = `${taskList.length} ${tasksNoun}`;
+  const headingText = `${taskList.length} タスク`;
   const listHeadingRef = useRef(null);
   const prevTaskLength = usePrevious(tasks.length);
 
